@@ -1,0 +1,54 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body{
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+/* *************************************
+**** Manejo de Posiciones & z-index ****
+************************************** */
+.relative{
+  position: relative;
+  margin: 80px;
+  width: 250px;
+  height: 250px;
+  background-color: steelblue;
+}
+
+.absolute{
+  position: absolute;
+  width: 90px;
+  height: 90px;
+  background-color: orange;
+  z-index: 100;
+}
+
+.absolute1{
+  top: 50px;
+  left: 10px;
+  background-color: burlywood;
+  z-index: 200;
+}
+
+.absolute2{
+  top: 20px;
+  left: 30px;
+  background-color: darkolivegreen;
+  z-index: 150;
+}
+
+/* **************************************
+******** Manejo de Border Radius ********
+************************************** */
+.radius{
+  margin: 80px;
+  width: 250px;
+  height: 250px;
+  background-color: steelblue;
+  border-radius: 100% 0% 100% 0% / 30% 59% 41% 70% ; /*fancy-border-radius*/
+}
