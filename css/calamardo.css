@@ -1,0 +1,144 @@
+:root{
+  --color-calamardo: #b8d1c8;
+}
+*{
+  margin: 0;
+  box-sizing: border-box;
+}
+.calamardo{
+  margin: 50px;
+  filter: drop-shadow(0 0 4px);
+}
+.head{
+  width: 250px;
+  height: 150px;
+  background-color: var(--color-calamardo);
+  border-radius: 50%;
+  border: 2px solid;
+  position: relative;
+}
+.head::before{
+  content: "";
+  width: 113px;
+  height: 70px;
+  background-color: var(--color-calamardo);
+  position: absolute;
+  border: 2px solid;
+  bottom: -65px;
+  left: 50%;
+  transform: translate(-50%);
+  border-top: transparent;
+}
+.hair{
+  position: absolute;
+  top: 40px;
+  left: 20px;
+  width: 14px;
+  height: 9px;
+  background-color: #22584D;
+  color: #22584D;
+  border-radius: 50%;
+  box-shadow: 20px -15px, 40px 0, 80px -30px, 100px -15px, 200px 30px;
+}
+.eye{
+  width: 50px;
+  height: 90px;
+  border-radius: 50%;
+  background-color: white;
+  border:2px solid;
+  position: absolute;
+  left: 74px;
+  top: 74px;
+  z-index: 100;
+  background-image: linear-gradient(#b2cdc4 47%, black 47%,black 50% , #fefcc9 50%);
+}
+.eye::before{
+  content: "";
+  width: 15px;
+  height: 25px;
+  position: absolute;
+  background-image: linear-gradient(transparent 20%, #8a1e05 20%);
+  border-radius: 50%;
+  top: 38px;
+  left: 50%;
+  transform: translate(-50%);
+}
+.eye-r{
+  left: initial;
+  right: 74px;
+}
+.eyebrow{
+  width: 50px;
+  height: 20px;
+  border-bottom: 4px solid black;
+  border-radius: 50%;
+  z-index: 200;
+  position: absolute;
+  top: 58px;
+  left: 71px;
+}
+.eyebrow-r{
+  left: initial;
+  top: 51px;
+  right: 65px;
+  border-bottom: 0;
+  border-top: 4px solid black;
+  transform: rotate(7deg);
+}
+.nose{
+  position: absolute;
+  top:134px;
+  left: 50%;
+  transform: translate(-50%);
+  width: 50px;
+  height: 100px;
+  background-color: var(--color-calamardo);
+  border: 2px solid;
+  border-radius: 50%;
+  z-index: 50;
+}
+.mouth{
+  width: 180px;
+  height: 40px;
+  border: 2px solid;
+  position: absolute;
+  background-color: var(--color-calamardo);
+  border-radius: 20px;
+  top: 190px;
+  left: 50%;
+  transform: translate(-50%);
+}
+.mouth::before{
+  content: "";
+  position: absolute;
+  background: var(--color-calamardo);
+  width: 113px;
+  height: 50px;
+  bottom: 0;
+  left: 32px;
+}
+.mouth::after{
+  content: "";
+  width: 135px;
+  height: 2px;
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translate(-50%);
+  background-color: black;
+}
+.mouth-end{
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border-left: 3px solid black;
+  position: absolute;
+  top: 9px;
+  left: 19px;
+}
+.mouth-end-r{
+  left: initial;
+  right: 19px;
+  border-left: 0;
+  border-right: 3px solid black;
+}
